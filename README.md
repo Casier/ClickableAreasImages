@@ -40,7 +40,10 @@ Sample Usage
             // Define your clickable areas
             // parameter values (pixels): (x coordinate, y coordinate, width, height) and assign an object to it
             clickableAreas.add(new ClickableArea(500, 200, 125, 200, new Character("Homer", "Simpson")));
-        	clickableAreas.add(new ClickableArea(600, 440, 130, 160, new Character("Bart", "Simpson")));
+            clickableAreas.add(new ClickableArea(600, 440, 130, 160, new Character("Bart", "Simpson")));
+        
+            // Associate your clickable area list to your image
+            clickableAreasImage.setClickableAreas(clickableAreas);
         }
 
         // Listen for touches on your images:
